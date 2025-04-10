@@ -55,13 +55,13 @@ switch(true){
 // Exercise 3: For loops
 // Printing numbers from 1 to 10
 for(let i = 1; i <= 10; i++){
-    // console.log(i);
+    console.log(i);
 }
 
 // Printing numbers divisible by 2
 for(let j = 1; j <= 20; j++){
     if(j % 2 == 0){
-        // console.log(j, "even numbers");
+        console.log(j, "even numbers");
     }
 }
 
@@ -75,7 +75,7 @@ console.log(total, "total from 1 to 100");
 // Printing all the numbers in the array
 const numbers = [1, 2, 3, 4, 5];
 for(let j = 0; j < numbers.length; j++){
-    // console.log(j, "numbers");
+    console.log(j, "numbers");
 }
 
 // Finding the highest number from an array
@@ -87,7 +87,7 @@ console.log(highest, "highest");
 // Printing numbers from 1 to 10
 let counter = 1;
 while(counter <= 10){
-    // console.log(counter);
+    console.log(counter);
     counter++;
 }
 
@@ -95,7 +95,7 @@ while(counter <= 10){
 let num1 = 1;
 while(num1 <= 20){
     if(num1 % 2 == 0){
-        // console.log(num1, "even");
+        console.log(num1, "even");
     }
     num1++;
 }
