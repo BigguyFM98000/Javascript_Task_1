@@ -5,10 +5,8 @@ function sockMerchant(n, ar) {
 
     for (let i = 0; i < n; i++) {
         let color = ar[i];
-        console.log(color, "color");
         // Count each sock color
         if (colorCount[color]) {
-            console.log(colorCount[color], "color count")
             colorCount[color]++;
         } else {
             colorCount[color] = 1;
@@ -22,3 +20,5 @@ function sockMerchant(n, ar) {
 
     return pairs;
 }
+
+console.log(sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]));
