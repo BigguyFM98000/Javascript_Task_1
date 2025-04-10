@@ -1,25 +1,23 @@
 function bonAppetit(bill, k, b) {
     // Write your code here
-    // bcharged and bactual variables
-    // loop through the bill array and pass the meal anna left
-    let billCharged = b;
-    let billActual = 0;
-    let diff = 0; 
-    for(let i = 0; i < bill.length; i++){
-        if(bill[i] !== bill[k]){
-            billActual += bill[i];
-        } else {
-            continue;
+    // Calculate the total cost excluding the item Anna didn't eat
+    let totalShared = 0;
+
+    for (let i = 0; i < bill.length; i++) {
+        if (i !== k) {
+            totalShared += bill[i];
         }
     }
-    
-    billActual = billActual / 2;
-    if(billCharged === billActual){
+
+    // Anna's fair share
+    let annaShare = totalShared / 2;
+
+    // Compare with what Brian charged
+    if (b === annaShare) {
         console.log("Bon Appetit");
-    }else {
-        diff = billCharged - billActual;
-        console.log(diff);
+    } else {
+        console.log(b - annaShare);
     }
 }
 
-bonAppetit([3,10,2,9], 1, 12); // code failed 2 cases but passed the rest
+bonAppetit([3,10,2,9], 1, 12);
